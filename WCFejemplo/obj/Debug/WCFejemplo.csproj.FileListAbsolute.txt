@@ -1,0 +1,7 @@
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\bin\WCFejemplo.dll.config
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\bin\WCFejemplo.dll
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\bin\WCFejemplo.pdb
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\obj\Debug\WCFejemplo.csprojAssemblyReference.cache
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\obj\Debug\WCFejemplo.csproj.CoreCompileInputs.cache
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\obj\Debug\WCFejemplo.dll
+C:\Users\luisz\source\repos\WCFejemplo\WCFejemplo\obj\Debug\WCFejemplo.pdb
