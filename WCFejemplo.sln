@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFejemplo", "WCFejemplo\WCFejemplo.csproj", "{1DB33ACF-D852-4329-A007-951C446A384D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clientUI", "clientUI\clientUI.csproj", "{664C4311-664F-4012-BAA4-3CBACC6B583D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DB33ACF-D852-4329-A007-951C446A384D} = {1DB33ACF-D852-4329-A007-951C446A384D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{1DB33ACF-D852-4329-A007-951C446A384D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DB33ACF-D852-4329-A007-951C446A384D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DB33ACF-D852-4329-A007-951C446A384D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664C4311-664F-4012-BAA4-3CBACC6B583D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664C4311-664F-4012-BAA4-3CBACC6B583D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664C4311-664F-4012-BAA4-3CBACC6B583D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664C4311-664F-4012-BAA4-3CBACC6B583D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

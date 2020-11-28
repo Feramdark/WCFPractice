@@ -16,56 +16,30 @@ namespace WCFejemplo
         //SI NO SE DECLARAN CON OPERATION CONTRACT NO APARECERAN EN LA VENTANA DE CLIENTE PRUEBA.
 
         [OperationContract]
-        string GetNumeroControl(int value);//Metodo uno
-
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);//Metodo ejemplo
-
-        [OperationContract]
         Alumno GetAlumno(Alumno alumno);//Metodo dos
+
         [OperationContract]
         int calificaciones(int Parcial1, int parcial2, int parcial3);
+
+        [OperationContract]
+        Alumno RegistrarAlumno();
+
+        [OperationContract]
+        Alumno RegistrarAlumno2();
+
+        [OperationContract]
+        string GetNumeroControl(int value);
 
         // TODO: agregue aquí sus operaciones de servicio
     }
 
-
     // Utilice un contrato de datos, como se ilustra en el ejemplo siguiente, para agregar tipos compuestos a las operaciones de servicio.
-    [DataContract]
-    public class CompositeType
-    {
-        bool boolValue = true;
-        string stringValue = "Hello ";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return boolValue; }
-            set { boolValue = value; }
-        }
-
-        [DataMember]
-        public string StringValue
-        {
-            get { return stringValue; }
-            set { stringValue=value; }
-        }
-    }
-
     [DataContract]
     public class Alumno
     {
-        bool bandera = true;
-        int nc = 1997;
-        string nombre = "Melisa";
-        string carrera = "Informatica";
-
-        [DataMember]
-        public bool BoolValue
-        {
-            get { return bandera; }
-            set { bandera = value; }
-        }
+        int nc;
+        string nombre;
+        string carrera;
 
         [DataMember]
         public int NoControl

@@ -33,27 +33,8 @@ namespace WCFejemplo
             }
             return nulo;
         }
-
-        public CompositeType GetDataUsingDataContract(CompositeType composite)//Deje el metodo de ejemplo
-        {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += ".";
-            }
-            return composite;
-        }
         public Alumno GetAlumno( Alumno alumno) //Metodo 2
         {
-            if (alumno.BoolValue)
-            {
-                alumno.NoControl += 0;
-                alumno.Nombre += "";
-                alumno.Carrera +="";
-            }
             return alumno;
         }
         public int calificaciones(int Parcial1, int parcial2,int parcial3)//Metodo 3
@@ -63,6 +44,22 @@ namespace WCFejemplo
             resul = Parcial1 + parcial2 + parcial3;
             Semestre = resul / 3;
             return Semestre;
+        }
+        public Alumno RegistrarAlumno()
+        {
+            Alumno datos = new Alumno();
+            datos.NoControl = 40;
+            datos.Nombre = "Fernando";
+            datos.Carrera = "informatica";
+            return datos;
+        }
+        public Alumno RegistrarAlumno2()
+        {
+            Alumno datos = new Alumno();
+            datos.NoControl = 50;
+            datos.Nombre = "Leonardo";
+            datos.Carrera = "Mecatronica";
+            return datos;
         }
     }
 }

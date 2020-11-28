@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50411/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50411/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50411/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFejemplo" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetNumeroControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumeroControl" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumeroControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumeroControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlumno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_calificaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:calificaciones" />
+  </wsdl:message>
+  <wsdl:message name="IService1_calificaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:calificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarAlumno_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAlumno" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarAlumno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAlumnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarAlumno2_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAlumno2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RegistrarAlumno2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarAlumno2Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAlumno2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlumno2" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAlumno2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlumno2Response" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetNumeroControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNumeroControl" message="tns:IService1_GetNumeroControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNumeroControlResponse" message="tns:IService1_GetNumeroControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAlumno" message="tns:IService1_GetAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAlumnoResponse" message="tns:IService1_GetAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="calificaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/calificaciones" message="tns:IService1_calificaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/calificacionesResponse" message="tns:IService1_calificaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAlumno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegistrarAlumno" message="tns:IService1_RegistrarAlumno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegistrarAlumnoResponse" message="tns:IService1_RegistrarAlumno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAlumno2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RegistrarAlumno2" message="tns:IService1_RegistrarAlumno2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegistrarAlumno2Response" message="tns:IService1_RegistrarAlumno2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlumno2">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAlumno2" message="tns:IService1_GetAlumno2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAlumno2Response" message="tns:IService1_GetAlumno2_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNumeroControl">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNumeroControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlumno">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calificaciones">
+      <soap:operation soapAction="http://tempuri.org/IService1/calificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAlumno">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegistrarAlumno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarAlumno2">
+      <soap:operation soapAction="http://tempuri.org/IService1/RegistrarAlumno2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlumno2">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAlumno2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:50411/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

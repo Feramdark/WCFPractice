@@ -1,0 +1,10 @@
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\bin\Debug\clientUI.exe.config
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\bin\Debug\clientUI.exe
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\bin\Debug\clientUI.pdb
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.csprojAssemblyReference.cache
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.Form1.resources
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.Properties.Resources.resources
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.csproj.GenerateResource.cache
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.csproj.CoreCompileInputs.cache
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.exe
+C:\Users\luisz\source\repos\WCFejemplo\clientUI\obj\Debug\clientUI.pdb
